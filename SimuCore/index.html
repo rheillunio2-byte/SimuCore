@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#070b16">
+  <meta name="description" content="SimuCore — a browser-based engineering simulation studio: projectile motion, pendulum, spring–mass and RC circuit models.">
+  <title>SimuCore — Engineering Simulation Studio</title>
+  <link rel="icon" type="image/svg+xml" href="assets/logo/favicon.svg">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <a class="skip-link" href="#view">Skip to content</a>
+  <div class="splash" id="splash" aria-hidden="true">
+    <div><svg viewBox="0 0 64 64"><defs><linearGradient id="sg" x1="8" y1="6" x2="56" y2="58" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#5B9BFF"/><stop offset="1" stop-color="#35D3E3"/></linearGradient></defs>
+      <path class="s-hex" pathLength="1" d="M32 6 54.5 19v26L32 58 9.5 45V19Z" fill="none" stroke="url(#sg)" stroke-width="2.4" stroke-linejoin="round"/>
+      <path class="s-trace" pathLength="1" d="M54.5 19C44 19 40 28 32 32S20 45 9.5 45" fill="none" stroke="#EAF2FF" stroke-width="2.8" stroke-linecap="round"/>
+      <circle class="s-node" cx="32" cy="32" r="4.6" fill="#35D3E3"/><circle class="s-node" cx="54.5" cy="19" r="3" fill="#5B9BFF"/><circle class="s-node" cx="9.5" cy="45" r="3" fill="#5B9BFF"/></svg>
+      <p>SIMUCORE</p></div>
+  </div>
+  <div class="app">
+    <aside class="sidebar" aria-label="Primary">
+      <a class="brand" href="#/overview" aria-label="SimuCore home"><img class="brand-word" src="assets/logo/simucore-wordmark.svg" alt="SimuCore" width="190" height="34"><img class="brand-icon" src="assets/logo/simucore-icon.svg" alt="" width="34" height="34"></a>
+      <nav class="nav" id="nav" aria-label="Main navigation"></nav>
+      <div class="sidebar-foot"><strong><span class="dot"></span>Local simulation</strong>Runs entirely in your browser. No account, no upload.</div>
+    </aside>
+    <div class="main"><main id="view" class="view" tabindex="-1"></main></div>
+  </div>
+  <div class="toasts" id="toasts" aria-live="polite"></div>
+  <div id="modal-root"></div>
+  <noscript><p class="noscript">SimuCore needs JavaScript enabled to run its simulations.</p></noscript>
+
+  <script src="js/core/utilities.js"></script>
+  <script src="js/core/state.js"></script>
+  <script src="js/core/engine.js"></script>
+  <script src="js/simulations/projectile.js"></script>
+  <script src="js/simulations/pendulum.js"></script>
+  <script src="js/simulations/spring.js"></script>
+  <script src="js/simulations/rc-circuit.js"></script>
+  <script src="js/data/simulation-config.js"></script>
+  <script src="js/components/storage.js"></script>
+  <script src="js/components/notifications.js"></script>
+  <script src="js/components/navigation.js"></script>
+  <script src="js/components/charts.js"></script>
+  <script src="js/components/controls.js"></script>
+  <script src="js/components/viewport.js"></script>
+  <script src="js/components/export.js"></script>
+  <script src="js/views/overview.js"></script>
+  <script src="js/views/library.js"></script>
+  <script src="js/views/workspace.js"></script>
+  <script src="js/views/experiments.js"></script>
+  <script src="js/views/docs.js"></script>
+  <script src="js/views/settings.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

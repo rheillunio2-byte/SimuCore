@@ -1,0 +1,16 @@
+/* SimuCore design tokens */
+:root {
+  --bg: #070b16; --bg-2: #0a1020; --surface: #0e1527; --surface-2: #131c32; --graphite: #1a2338; --graphite-2: #232e48;
+  --line: rgba(148, 163, 205, .16); --line-strong: rgba(148, 163, 205, .3);
+  --text: #eaf2ff; --text-2: #c3cfe6; --muted: #93a1bd; --faint: #6c7a97;
+  --blue: #5b9bff; --cyan: #35d3e3; --violet: #8b7cf6; --violet-soft: #a99bff;
+  --success: #4fd6a0; --warn: #f2b96a; --danger: #ff7a8a;
+  --grad: linear-gradient(135deg, #4f8cff 0%, #35c4e3 100%);
+  --radius-s: 8px; --radius: 12px; --radius-l: 16px;
+  --shadow: 0 1px 0 rgba(255,255,255,.04) inset, 0 18px 40px -22px rgba(0,0,0,.75);
+  --glass: rgba(16, 24, 44, .72);
+  --font: Inter, "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+  --mono: ui-monospace, "SF Mono", "Cascadia Mono", Menlo, Consolas, monospace;
+  --sidebar-w: 236px; --topbar-h: 58px; --ease: cubic-bezier(.2, .7, .2, 1);
+  color-scheme: dark;
+}

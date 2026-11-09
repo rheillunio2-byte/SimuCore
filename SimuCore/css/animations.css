@@ -1,0 +1,19 @@
+/* SimuCore — motion. All of it is disabled by prefers-reduced-motion or the Settings override. */
+@keyframes view-enter { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+@keyframes toast-in { from { opacity: 0; transform: translateX(24px) scale(.97); } to { opacity: 1; transform: none; } }
+@keyframes toast-out { to { opacity: 0; transform: translateX(24px); } }
+@keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }
+@keyframes pop-in { from { opacity: 0; transform: translateY(10px) scale(.97); } to { opacity: 1; transform: none; } }
+@keyframes draw { to { stroke-dashoffset: 0; } }
+@keyframes node-in { from { opacity: 0; transform: scale(.2); } to { opacity: 1; transform: none; } }
+@keyframes pulse-dot { 0%, 100% { box-shadow: 0 0 0 3px rgba(79,214,160,.15); } 50% { box-shadow: 0 0 0 6px rgba(79,214,160,.05); } }
+.view-enter { animation: view-enter .45s var(--ease) both; }
+.view-enter > * { animation: view-enter .5s var(--ease) both; } .view-enter > *:nth-child(2) { animation-delay: .05s; } .view-enter > *:nth-child(3) { animation-delay: .1s; } .view-enter > *:nth-child(n+4) { animation-delay: .15s; }
+.dot { animation: pulse-dot 2.6s ease-in-out infinite; }
+.splash .s-hex, .splash .s-trace { stroke-dasharray: 1; stroke-dashoffset: 1; animation: draw 1s var(--ease) .1s forwards; } .splash .s-trace { animation-delay: .45s; }
+.splash .s-node { transform-box: fill-box; transform-origin: center; opacity: 0; animation: node-in .45s var(--ease) 1s forwards; }
+.hero-logo .s-trace { stroke-dasharray: 1; animation: draw 1.4s var(--ease) .2s both; stroke-dashoffset: 1; animation-fill-mode: forwards; }
+html.reduce-motion *, html.reduce-motion *::before, html.reduce-motion *::after { animation-duration: .001ms !important; animation-delay: 0s !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important; scroll-behavior: auto !important; }
+html.reduce-motion .splash .s-hex, html.reduce-motion .splash .s-trace, html.reduce-motion .hero-logo .s-trace { stroke-dashoffset: 0; } html.reduce-motion .splash .s-node { opacity: 1; }
+@media (prefers-reduced-motion: reduce) { html:not(.full-motion) *, html:not(.full-motion) *::before, html:not(.full-motion) *::after { animation-duration: .001ms !important; animation-delay: 0s !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important; scroll-behavior: auto !important; }
+  html:not(.full-motion) .splash .s-hex, html:not(.full-motion) .splash .s-trace, html:not(.full-motion) .hero-logo .s-trace { stroke-dashoffset: 0; } html:not(.full-motion) .splash .s-node { opacity: 1; } }
