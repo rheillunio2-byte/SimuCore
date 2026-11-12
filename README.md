@@ -261,6 +261,21 @@ Each simulation lists its assumptions in the workspace and on the Documentation 
 
 ---
 
+## 🧩 Model Verification Notes
+
+SimuCore is designed to make its calculations understandable and reproducible. Each simulation uses a defined mathematical model, with its assumptions and limitations documented alongside the results.
+
+When reviewing a simulation, users are encouraged to:
+
+- Check the governing equations and initial conditions.
+- Observe how changing individual parameters affects the system response.
+- Compare measured outputs with expected theoretical behavior.
+- Consider the assumptions before interpreting the results.
+
+These notes are intended to support experimentation, learning, and better understanding of engineering concepts.
+
+---
+
 ## 🔐 Privacy
 
 SimuCore runs entirely in your browser. No account is required, and simulation data is not uploaded anywhere.
