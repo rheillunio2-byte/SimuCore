@@ -284,6 +284,21 @@ Saved experiments, remembered parameters, and settings are stored in your browse
 
 ---
 
+## 🧠 Learning Resources
+
+SimuCore is intended to complement the study of engineering and physics concepts through interactive experimentation.
+
+For a more effective learning experience, users may:
+
+- Review the mathematical principles behind each simulation.
+- Experiment with different initial conditions and parameter values.
+- Observe how theoretical models translate into visual responses.
+- Use the built-in documentation to understand equations and assumptions.
+
+Understanding the relationship between mathematical models and observed behavior is an important part of engineering analysis.
+
+---
+
 ## 📂 Project Structure
 
 ```text
